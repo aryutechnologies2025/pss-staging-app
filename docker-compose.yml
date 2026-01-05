@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+  employee:
+    build: ./pssemployees-frontend
+    container_name: staging_employee
+    ports:
+      - "3002:80"
+    restart: always
+
+  admin:
+    build: ./pssportal-admin
+    container_name: staging_admin
+    ports:
+      - "3001:80"
+    restart: always
+
+  api:
+    build: ./pssportal-api-backend
+    container_name: staging_api
+    ports:
+      - "8001:80"
+    restart: always
+

@@ -1,0 +1,18 @@
+# OS & system
+.cache/
+.config/
+.local/
+.npm/
+.pm2/
+.ssh/
+.launchpadlib/
+
+# Docker
+*.log
+
+# Node
+node_modules/
+
+# Env
+.env
+
